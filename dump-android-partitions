@@ -198,7 +198,7 @@ else
 fi
 
 test -f "$excludefile" && {
-  exclude=$(sed 's/^#.*$//;s/[:space:][:space:]*#.*$//;/^$/d' "$excludefile")
+  exclude=$(sed 's/^#.*$//;s/[[:space:]][[:space:]]*#.*$//;/^$/d' "$excludefile")
 } || exclude=''
 
 
